@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text|Merriweather");
+/* Variables */
+body {
+  width: 80%;
+  margin: 8rem 15% 8rem 15%;
+  font-family: Crimson Text serif; }
+
+.text-decoration-five {
+  font-size: calc(1.3rem + 2.5vw);
+  line-height: 1.1;
+  font-weight: 300;
+  display: block;
+  margin: 0;
+  padding-top: 40%;
+  padding-left: 4%; }
+
+.text-decoration-large {
+  font-size: calc(1.5rem + 8.5vw);
+  text-transform: uppercase;
+  line-height: 0.9;
+  font-weight: 200;
+  display: block;
+  margin: 0;
+  padding-left: 10%;
+  padding-top: 0; }
+
+.heading-italic {
+  font-size: calc(1.3rem + 2.5vw);
+  text-transform: none;
+  line-height: 1;
+  font-weight: 200;
+  background: none;
+  display: inline;
+  margin: 0;
+  padding-top: 5%; }
+
+.hero-section {
+  display: grid;
+  grid-template-columns: minmax(30vw, 70vw);
+  -webkit-clip-path: polygon(18% 1.96%, 91.12% 1.19%, 90.75% 90.02%, 73.63% 99.42%, 69.95% 99.54%, 0.13% 99.55%, 0.51% 12.63%);
+  clip-path: polygon(18% 1.96%, 91.12% 1.19%, 90.75% 90.02%, 73.63% 99.42%, 69.95% 99.54%, 0.13% 99.55%, 0.51% 12.63%);
+  place-self: center; }
+
+.top-heading {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1; }
+
+.hero-image {
+  position: relative;
+  grid-column: 1;
+  grid-row: 1; }
+
+.hero-image img {
+  width: 100%; }
+
+.hero-image:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(white), to(red));
+  background-image: -webkit-linear-gradient(top left, white, red);
+  background-image: -o-linear-gradient(top left, white, red);
+  background-image: linear-gradient(to bottom right, white, red);
+  opacity: .2;
+  grid-column: 1;
+  grid-row: 1; }
+
+ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  grid-template-rows: repeat(4, 1fr); }
+
+ol li {
+  display: block;
+  grid-column: span 2;
+  grid-row: span 2; }
+
+ol li img {
+  -webkit-shape-outside: circle(50%);
+  shape-outside: circle(50%);
+  text-align: center; }
+
+ol li .ring img {
+  width: 50%; }
